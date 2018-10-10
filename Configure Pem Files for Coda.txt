@@ -1,0 +1,23 @@
+Configuring Coda for WP1
+
+1) Make sure you have a .ssh folder in your "home" folder. If you do not have one create one and make sure to    include the "." in ".ssh". It might be a good idea to display hidden folders on your Mac as well.
+
+2) Open up your Terminal or iTerm and cd into your .ssh folder. The command looks like this: 
+    cd .ssh
+You will now be inside your .ssh folder.
+
+3) You should have received an Email from Web Services containing a .zip file. Move the .zip file into the .ssh folder and unzip it. It should extract a .pem file. 
+
+4) Back in your terminal change the permissions of the .pem file to 600:
+   chomd 600 {keyname}.pem
+Then add the file to the keychain:
+   ssh -add {keyname}.pem
+
+5) You can now close terminal and open up Coda. Click the plus button in the bottom left corner of the new window. Click over from the Site option to the Server option and fill out the following:
+   Protocol: SFTP
+   Server: sftp.umg-wp-stage.com
+   User: umcinternaldev
+   Password: (Keychain should remember this but if not you will have to select that .pem from the .ssh folder)
+
+
+
