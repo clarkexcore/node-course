@@ -1,4 +1,7 @@
 /node_modules
 
+authKey_1234.p8
+music_token.js
+
 .DS_Store
 package-lock.json

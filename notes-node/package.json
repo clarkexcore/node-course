@@ -9,6 +9,7 @@
   "author": "Alex Clarke",
   "license": "ISC",
   "dependencies": {
+    "jsonwebtoken": "^8.3.0",
     "lodash": "^4.17.10",
     "yargs": "^4.7.1"
   }
